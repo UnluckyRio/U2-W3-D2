@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatore Tempo</title>
+    <!-- Inclusione Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Aggiungo uno sfondo chiaro -->
+    <!-- Contenitore principale Bootstrap -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-lg">
+            <!-- Card con ombra -->
+            <div class="card-body text-center">
+              <!-- Icona orologio -->
+              <div class="mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 1 .5.5v4.25l3.5 2.1a.5.5 0 0 1-.5.85l-3.75-2.25A.5.5 0 0 1 7.5 8V4a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14z"
+                  />
+                </svg>
+              </div>
+              <h1 class="mb-4">Contatore di tempo</h1>
+              <!-- Elemento che mostra il tempo trascorso -->
+              <div class="display-3 mb-3 fw-bold text-primary" id="timer">
+                0
+              </div>
+              <p class="text-muted">
+                Il contatore si aggiorna ogni secondo e prosegue anche
+                aggiornando la pagina.
+              </p>
+              <!-- Bottone per andare all'esercizio precedente -->
+              <a href="../html/form.html" class="btn btn-success mt-3"
+                >Esercizio precedente</a
+              >
+              <!-- Bottone Bootstrap -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Collegamento allo script del contatore -->
+    <script src="../script/counter.js"></script>
+  </body>
+</html>
